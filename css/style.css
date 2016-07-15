@@ -96,7 +96,8 @@ a {
   font-style: italic;
   font-size: 18px;
   color: #f3f3f3;
-  line-height: 28px;
+  line-height: 38px;
+  margin-top:30px;
 }
 
 #skills-h3 {
@@ -124,12 +125,15 @@ a {
 }
 
 .dark-gray {
-  background-color: #4a4a4a;
+  background-color: green;
+}
+
+img {
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #484848;
+  background-color: #333;
 }
 
 .flex-box {
@@ -151,7 +155,7 @@ ul {
 
 .biopic {
   float: left;
-  padding: 10px;
+  padding-right: 30px;
   width: 200px;
   display: none;
 }
@@ -160,9 +164,6 @@ img {
   padding: 10px;
 }
 
-span {
-  padding: 5px;
-}
 
 #lets-connect {
   text-align: center;
