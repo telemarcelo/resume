@@ -26,7 +26,7 @@ h6 {
 
 h1 {
   font-size: 40px;
-  color: #f5a623;
+  color: gold;
   line-height: 48px;
   display: inline;
 }
@@ -34,10 +34,12 @@ h1 {
 h2 {
   font-weight: bold;
   font-size: 24px;
-  color: #999;
+  /*color: #999;*/
+  color: darkgreen;
   line-height: 29px;
   padding: 10px;
 }
+
 
 h3 {
   font-style: italic;
@@ -54,13 +56,12 @@ h4 {
 }
 
 h2,
-h3,
 h4,
 h5 {
   padding:10px 5%;
-
 }
 
+h3 {padding-top:10px;}
 
 .date-text {
   font-style: italic;
@@ -86,7 +87,8 @@ p {
 }
 
 a {
-  color: #1199c3;
+  /*color: #1199c3;*/
+  color: darkgreen;
   text-decoration: none;
   margin-top: 10px;
   display: block;
@@ -98,19 +100,26 @@ a {
   color: #f3f3f3;
   line-height: 38px;
   margin-top:30px;
+  padding-left: 30px;
 }
 
 #skills-h3 {
-  color: #f5ae23;
+  color: gold;
   display: none;
 }
 
-.orange {
-  background-color: #f5ae23;
+.proj {
+    color: white;
 }
 
-.orange-text {
-  color: #f5ae23;
+.gold {
+  /*background-color: #f5ae23;*/
+  color: gold;
+}
+
+.gold-text {
+  /*color: #f5ae23; */
+  color: gold;
 }
 
 .white-text {
@@ -125,15 +134,30 @@ a {
 }
 
 .dark-gray {
-  background-color: green;
+  background-color: #05d1d1;
 }
 
 img {
+  border: solid 1px black;
+  padding: none;
+  margin: none;
+}
+
+#portrait {
+  border: solid 1px gold;
+  padding: none;
+  margin: none;
 }
 
 /* TODO: Replace with image later */
 #header {
-  background-color: #333;
+  /*background-color: #054444; */
+  background-size: cover;
+  background-repeat:repeat-y;
+}
+
+background-image {
+  -webkit-filter: opacity(20%);
 }
 
 .flex-box {
@@ -155,18 +179,23 @@ ul {
 
 .biopic {
   float: left;
-  padding-right: 30px;
+  /*padding-right: 30px;*/
   width: 200px;
   display: none;
 }
 
 img {
-  padding: 10px;
+  padding: none;
 }
-
 
 #lets-connect {
   text-align: center;
+  background-size: cover;
+  -webkit-filter:hue-rotate(0deg);
+}
+
+#projects {
+  background-size: cover;
 }
 
 /* Media queries to handle various device widths */
@@ -210,6 +239,10 @@ img {
 @media only screen and (min-width: 750px) {
   #skills-h3,
   .biopic {
-    display: block;
+    display: inline;
+  }
+
+  #skills-h3{
+    padding: 30px;
   }
 }

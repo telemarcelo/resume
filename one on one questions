@@ -13,10 +13,51 @@ change colors, look
 
 git id's  do we need to type them????  really?
 
+should we push to the udacity front-end???
 
-how to git bash back after opening with sublime
+how does this work?
+ locations.forEach(function(place){
+      // the search request object
+      var request = {
+        query: place
+      };
 
+steps:
+webcasts
+go through project (add images, all parts)
+add online nanodegrees, Georgia Tech
+review rubric
+look at sample resumes
+background image out of focus and slowly moving???
+creativity frameworks
+customize css (change colors) and other style (add image to background block?)
+look over notes above
+see fork vs. clone repository
+add places I've lived and worked (perhpas put a more button? or modal), add NY as worked and Brazil as lived
+gadventures in blue!
+navigation bars
+contact links that will take you to say to your twitter account
+run CSS lint?
+css zen garden site
+font awesome for unicode characters
 
+Instead of using keyframes through css I wanted something lighter and simpler. I have seemed to have found a solution involving the use of a few lines of jquery & css.
+
+The Javascript:
+
+<script>
+$(function(){
+$("body").animate({backgroundPositionX : "-450"}, 25000);
+});
+</script>
+The CSS:
+
+<style type="text/css">
+  body {
+    background-image: url('../imgs/bg-image.jpg');
+    background-repeat:repeat-x;
+    }
+</style>  
 
 
 
