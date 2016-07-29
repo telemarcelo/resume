@@ -95,7 +95,7 @@ education.display = function(){
 
 	if(education.online.length > 0){
 		$(".education-entry:last").append(HTMLonlineClasses);
-		for(index in education.schools){
+		for(index in education.online){
 			var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", education.online[index].title);
 			var formattedOnlineSchool = HTMLonlineSchool.replace("%data%", education.online[index].School);
 			$(".education-entry:last").append(formattedOnlineTitle+formattedOnlineSchool);
@@ -217,6 +217,8 @@ function locationizer(work_obj) {
 }
 
 locationizer(work);
+
+
 
 $('#mapDiv').append(googleMap);
 //https://developers.google.com/maps/documentation/javascript/tutorial

@@ -57,13 +57,24 @@
     if(document.getElementById('map') === null) {
       document.getElementById('mapDiv').style.display = 'none';
     }
-
+  
   $(function(){
   $("#header").animate({backgroundPositionY : "-350"}, 3000);
   var num = Math.floor(Math.random()*3+1);
+  var degs = 0;
+  if(Math.random()>.8){
+  degs = Math.floor(Math.random()*360+1);
+}
+
   document.getElementById('header').style.backgroundImage = "url('images/rain"+num+".jpg')";
   document.getElementById('projects').style.backgroundImage = "url('images/rain"+num+".jpg')";
   document.getElementById('lets-connect').style.backgroundImage = "url('images/rain"+num+".jpg')";
+  
+  document.getElementById('portrait').style.WebkitFilter = "hue-rotate("+(-degs)+"deg)";
+  document.getElementById('projects').style.WebkitFilter = "hue-rotate("+degs+"deg)";
+  document.getElementById('lets-connect').style.WebkitFilter = "hue-rotate("+degs+"deg)";
+  document.getElementById('header').style.WebkitFilter = "hue-rotate("+degs+"deg)";
+
   });
 
   </script>
