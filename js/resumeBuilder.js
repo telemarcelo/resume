@@ -169,7 +169,7 @@ var projects = {
 		"title" : "Eyepublic",
 		"dates" : "8/15/2014 - 12/31/2015",
 		"description" : "A website to store my online resume, projects, and hobbies.",
-		"image_url" : "images/eyepublic-small.jpg"
+		"image_url" : "images/Eyepublic-small.jpg"
 	},{
 		"title" : "MarCuban",
 		"dates" : "8/15/2014 - 12/31/2015",
