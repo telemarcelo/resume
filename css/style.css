@@ -141,14 +141,10 @@ a {
 
 img {
   border: solid 1px black;
-  padding: none;
-  margin: none;
 }
 
 #portrait {
   border: solid 1px gold;
-  padding: none;
-  margin: none;
 }
 
 /* TODO: Replace with image later */
@@ -183,9 +179,6 @@ ul {
   display: none;
 }
 
-img {
-  padding: none;
-}
 
 #lets-connect {
   text-align: center;
