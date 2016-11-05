@@ -50,16 +50,16 @@ var education = {
         "name": "Harvard University",
         "location": "Cambridge, MA",
         "degree": "Master of Science",
-        "majors": "Applied Mathematics",
+        "majors": ["Applied Mathematics"],
         "dates": "1996",
-        "url": "?"
+        "url": "http://www.harvard.edu/"
     }, {
         "name": "Harvard College",
         "location": "Cambridge, MA",
         "degree": "Bachelor of Arts",
-        "majors": "Applied Mathematics",
+        "majors": ["Applied Mathematics"],
         "dates": "1994",
-        "url": "?"
+        "url": "http://www.harvard.edu/"
     }],
     "professional": [{
         "name": "Society of Actuaries",
@@ -69,7 +69,7 @@ var education = {
         "title": "Front-End Web Developer",
         "school": "Udacity",
         "dates": "2016",
-        "URL": "https://www.udacity.com/course/front-" + 
+        "url": "https://www.udacity.com/course/front-" + 
         "end-web-developer-nanodegree--nd001"
     }]
 };
@@ -81,6 +81,8 @@ education.display = function() {
         	$("#education").append(HTMLschoolStart);
             var formattedSchoolName = HTMLschoolName.replace("%data%", 
                 school.name);
+            var formattedSchoolName = formattedSchoolName.replace("#", 
+                school.url);
             var formattedSchoolDegree = HTMLschoolDegree.replace("%data%", 
                 school.degree);
             $(".education-entry:last").append(formattedSchoolName + 
@@ -98,7 +100,7 @@ education.display = function() {
     }
 
     if (education.onlineCourses.length > 0) {
-        $(".education-entry:last").append(HTMLonlineClasses);
+        $("#education").append(HTMLonlineClasses);
         education.onlineCourses.forEach(function(online) {
         	$("#education").append(HTMLschoolStart);
             var formattedOnlineTitle = HTMLonlineTitle.replace("%data%", 
@@ -249,19 +251,9 @@ function locationizer(work_obj) {
     return locations;
 }
 
-locationizer(work);
-
 
 
 $('#mapDiv').append(googleMap);
 //https://developers.google.com/maps/documentation/javascript/tutorial
 //https://d3js.org/
 
-
-$("#main").append(internationalizeButton);
-var inName = function(name) {
-    name = name.split(" ");
-    var firstName = name[0].slice(0, 1).toUpperCase() + name[0].slice(1).toLowerCase();
-    var secondName = name[1].toUpperCase();
-    return secondName + " " + firstName;
-};
